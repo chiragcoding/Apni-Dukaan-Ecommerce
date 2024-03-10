@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bag.css">
+    <script
+      src="https://kit.fontawesome.com/365d43a184.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ---------------Nav bar--------------------- -->
+    <section id="header">
+      <a href="#"><img src="img/hero2.png" alt="" class="logo" /></a>
+      <div>
+        <ul id="navbar">
+          <a href="#" id="close"><i class="fa-solid fa-times"></i></a>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="lg-bag" style="position: relative">
+            <a class="active" href="bag.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <span class="bag-item-count">0</span>
+          </li>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="cart" class="section-p1">
+      <div class="cart-container">
+      
+      </div>
+
+      <div class="cart-details">
+        <!-- <h4>Price Details(2 Items)</h4>
+        <div>
+          <li>Total MRP</li>
+          <li>Rs1284</li>
+        </div>
+        <div>
+          <li>Discount on MRP</li>
+          <li>123</li>
+        </div>
+        <div>
+          <li>Convience Fee</li>
+          <li>Rs 99</li>
+        </div>
+        <hr id="line">
+        <div>
+          <li>Total Amount</li>
+          <li>Rs 1240</li>
+        </div>
+        
+          <button id="order-btn" onclick="myFunction()">Place Order</button>
+          -->
+      </div>
+
+      <div id="order-placed">
+        <div><i class="fa-solid fa-circle-check"></i></div>
+        <div>Order Placed Successfully</div>
+      </div>
+
+      
+  
+    </section>
+   
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/hero2.png" alt="" />
+        <h4>Contact</h4>
+        <p><strong>Address</strong>: Chandigarh Rajpura Chitkara University</p>
+        <p><strong>Phone:</strong> 7717336590</p>
+        <p><strong>Hours:</strong>10:00 - 18:00, Mon-Sat</p>
+
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>2024 copyright maheshwari business</p>
+    </div>
+    <script src="items.js"></script>
+    <!-- <script src="shop.js"></script> -->
+    <script src="app.js"></script>
+
+    
+    <script>
+      let placed=document.getElementById("order-placed");
+      let cart=document.getElementById("cart");
+      console.log(cart);
+     function myFunction(){
+      
+      cart.style.visibility="hidden"
+      const timeout=setTimeout(display,1000)
+      function display(){
+        placed.style.visibility="visible";
+      }
+
+      setTimeout(againdisplay,3000)
+
+      function againdisplay(){
+        cart.style.visibility="visible";
+        placed.style.visibility="hidden";
+      }
+          
+     }
+    </script>
+    <script src="shop.js"></script>
+    <script src="items.js"></script>
+    <script src="bag.js"></script>
+  </body>
+</html>
